@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="center.css" rel="stylesheet" type="text/css"
+        <title>Customer form</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+        <style>
+            body {
+                    font-family: "Sofia", sans-serif;
+                }
+</style>
+    </head>
+    <div class="container">
+    <body>
+        <h1>Customer form</h1>
+        <h2 class="mini-heading">Instructions</h2>
+        <ul>
+            <li>Complete the fields</li>
+            <li>Press the send button</li>
+            <li>It will cost &pound;50</li>
+        </ul>
+
+        <h2 class="mini-heading">Customer information</h2>
+        <form action="https://some-server123.com/customer" method="get" >
+                <label for="job-title">Job title</label>
+                <select name="jt" id="job-title" required>
+                    <option value="" disabled selected >please select</option>
+                    <option value="trainee">trainee</option>
+                    <option value="professional">professional</option>
+                </select>
+                <br>
+                <label for="customer-name" >Customer name</label>
+                <input type="text" name="custn" id="customer-name">
+                <br>
+                <label>Choose your favourite colour</label>
+                <input type="color">
+                <br>
+                <label>Select your birthday</label>
+                <input type="date">
+                
+                <br>
+                <button type="submit" class="btn">Send</button>
+        </form> 
+    </body>
+    </div>
+</html>
